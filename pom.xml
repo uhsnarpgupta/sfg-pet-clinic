@@ -46,6 +46,8 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:uhsnarpgupta/sfg-pet-clinic.git</developerConnection>
+        <connection>scm:git:git@github.com:uhsnarpgupta/sfg-pet-clinic.git</connection>
+        <url>git@github.com:uhsnarpgupta/sfg-pet-clinic.git</url>
         <tag>sfg-pet-clinic-0.0.3</tag>
     </scm>
 
