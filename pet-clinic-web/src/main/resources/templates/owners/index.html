@@ -5,6 +5,24 @@
     <title>List of Pet Owners</title>
 </head>
 <body>
-    <h1 th:text="'List of Owners'">Owners List</h1>
+<h1 th:text="'List of Owners'">Owners List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>FirstName</th>
+        <th>Last Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--owner?.id here ? is a null safe operator -->
+    <!--/*@thymesVar id="owners" type="com.uhsnarp.sfgpetclinic.model.Owner"*/-->
+    <tr th:each="owner:${owners}">
+        <td th:text="${owner?.id}">1</td>
+        <td th:text="${owner?.firstName}">Harry</td>
+        <td th:text="${owner?.lastName}">Potter</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
