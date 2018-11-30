@@ -1,10 +1,7 @@
 package com.uhsnarp.sfgpetclinic.bootstrap;
 
 import com.uhsnarp.sfgpetclinic.model.*;
-import com.uhsnarp.sfgpetclinic.services.OwnerService;
-import com.uhsnarp.sfgpetclinic.services.PetTypeService;
-import com.uhsnarp.sfgpetclinic.services.SpecialityService;
-import com.uhsnarp.sfgpetclinic.services.VetService;
+import com.uhsnarp.sfgpetclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,14 +14,16 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
     //Befor Spring 2 @Autowired was required on constructor as well
     //@Autowired
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
     }
 
     /* public DataLoader() {
@@ -97,6 +96,12 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner2);
 
+        Visit catVisit = new Visit();
+        catVisit.setPet(baichungsPet);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setDescription("Sneezy kitty");
+
+        visitService.save(catVisit);
         System.out.println("Loaded Owners...");
 
         Vet vet1 = new Vet();
