@@ -48,8 +48,8 @@ public class Owner extends Person {
      * @param name to test
      * @return true if pet name is already in use
      */
-    public Pet getPet(String name) {
-        return getPet(name, false);
+    public Pet getPets(String name) {
+        return getPets(name, false);
     }
 
     /**
@@ -58,7 +58,7 @@ public class Owner extends Person {
      * @param name to test
      * @return true if pet name is already in use
      */
-    public Pet getPet(String name, boolean ignoreNew) {
+    public Pet getPets(String name, boolean ignoreNew) {
         name = name.toLowerCase();
         for (Pet pet : pets) {
             if (!ignoreNew || !pet.isNew()) {
