@@ -91,7 +91,7 @@ class OwnerControllerTest {
         verifyZeroInteractions(ownerService);
     }
 
-    //@Test
+    @Test
     void processCreationForm() throws Exception {
         when(ownerService.save(ArgumentMatchers.any())).thenReturn(Owner.builder().id(1l).build());
 
@@ -115,7 +115,7 @@ class OwnerControllerTest {
         verifyZeroInteractions(ownerService);
     }
 
-    //@Test
+    @Test
     void processUpdateOwnerForm() throws Exception {
         when(ownerService.save(ArgumentMatchers.any())).thenReturn(Owner.builder().id(1l)
                 .firstName("FirstNAme").lastName("LastName").address("Address").city("City").telephone("1234").build());
