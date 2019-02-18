@@ -2,16 +2,282 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Pet Clinic Index</title>
+    <title>Bootstrap 4 Website Example</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    <h2 th:text="#{welcome}">Welcome</h2>
-
+<main class="inner cover" role="main">
+    <h1 class="cover-heading">Aligarh City</h1>
+    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the
+        text, and add your own fullscreen background photo to make it your own.</p>
+    <p class="lead">
+        <a class="btn btn-lg btn-secondary" href="#">Learn more</a>
+    </p>
+</main>
+<!--<div class="container-fluid" style="margin-top:30px">
+<div class="hero-image row">
+    <div class="hero-text">
+        <h1>Aligarh</h1>
+        <p>City of Locks</p>
+        <button>Contact Us</button>
+    </div>
+</div>
+&lt;!&ndash;<div class="container" style="margin:5% 0 5% 10% ">
     <div class="row">
-        <div class="col-md-12">
-            <img class="img-responsive" src="../static/resources/images/pets.png" th:src="@{/resources/images/pets.png}"/>
+        <div class="col">
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="../static/resources/images/parallax.jpg"
+                     th:src="@{/resources/images/parallax.jpg}" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="../static/resources/images/parallax.jpg"
+                     th:src="@{/resources/images/parallax.jpg}" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="../static/resources/images/parallax.jpg"
+                     th:src="@{/resources/images/parallax.jpg}" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="../static/resources/images/parallax.jpg"
+                     th:src="@{/resources/images/parallax.jpg}" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="../static/resources/images/parallax.jpg"
+                     th:src="@{/resources/images/parallax.jpg}" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>&ndash;&gt;
+&lt;!&ndash;
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <img class="card-img-top" src="../static/resources/images/parallax.jpg"
+                         th:src="@{/resources/images/parallax.jpg}" alt="Card image">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-success">Click here</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <img class="card-img-top" src="../static/resources/images/parallax.jpg"
+                         th:src="@{/resources/images/parallax.jpg}" alt="Card image">
+                    <h4 class="card-title">Title 2</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-success">Click here</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <img class="card-img-top" src="../static/resources/images/parallax.jpg"
+                         th:src="@{/resources/images/parallax.jpg}" alt="Card image">
+                    <h4 class="card-title">Title 3</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-success">Click here</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <div class="card-block">
+                    <img class="card-img-top" src="../static/resources/images/parallax.jpg"
+                         th:src="@{/resources/images/parallax.jpg}" alt="Card image">
+                    <h4 class="card-title">Title 4</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-success">Click here</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+&ndash;&gt;
+</div>
+<section class="container p-t-3">
+<div class="row">
+    <div class="col-lg-12">
+        <h1><span style="color: crimson">Bootstrap 4 Card Slider</span> by webseotips</h1>
+        </p></div>
+    </p></div>
+</section>
+<section class="carousel slide" data-ride="carousel" id="postsCarousel">
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-right mb-4">
+            <a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a><br />
+            <a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+        </div>
+        </p></div>
+    </p></div>
+<div class="container p-t-0 m-t-2 carousel-inner">
+    <div class="row row-equal carousel-item active m-t-0">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-img-top card-img-top-250">
+                    <img class="img-fluid" src="../static/resources/images/parallax.jpg"
+                         th:src="@{/resources/images/parallax.jpg}" alt="Carousel 1">
+                </div>
+                <div class="card-block p-t-2">
+                    <div class="card-header">
+                        <h3>flower1</h3>
+                    </div>
+                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
+                    </p></div>
+                </p></div>
+            </p></div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-img-top card-img-top-250">
+                    <img class="img-fluid" src="../static/resources/images/parallax.jpg"
+                         th:src="@{/resources/images/parallax.jpg}" alt="Carousel 1">
+                </div>
+                <div class="card-block p-t-2">
+                    <div class="card-header">
+                        <h3>flower2</h3>
+                    </div>
+                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
+                    </p></div>
+                </p></div>
+            </p></div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-img-top card-img-top-250">
+                    <img class="img-fluid" src="../static/resources/images/parallax.jpg"
+                         th:src="@{/resources/images/parallax.jpg}" alt="Carousel 1">
+                </div>
+                <div class="card-block p-t-2">
+                    <div class="card-header">
+                        <h3>flower1</h3>
+                    </div>
+                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
+                    </p></div>
+                </p></div>
+            </p></div>
+        </p></div>
+    <div class="row row-equal carousel-item m-t-0">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-img-top card-img-top-250">
+                    <img class="img-fluid" src="../static/resources/images/parallax.jpg"
+                         th:src="@{/resources/images/parallax.jpg}" alt="Carousel 1">
+                </div>
+                <div class="card-block p-t-2">
+                    <div class="card-header">
+                        <h3>flower1</h3>
+                    </div>
+                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
+                    </p></div>
+                </p></div>
+            </p></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-img-top card-img-top-250">
+                    <img class="img-fluid" src="../static/resources/images/parallax.jpg"
+                         th:src="@{/resources/images/parallax.jpg}" alt="Carousel 1">
+                </div>
+                <div class="card-block p-t-2">
+                    <div class="card-header">
+                        <h3>flower1</h3>
+                    </div>
+                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
+                    </p></div>
+                </p></div>
+            </p></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-img-top card-img-top-250">
+                    <img class="img-fluid" src="../static/resources/images/parallax.jpg"
+                         th:src="@{/resources/images/parallax.jpg}" alt="Carousel 1">
+                </div>
+                <div class="card-block p-t-2">
+                    <div class="card-header">
+                        <h3>flower1</h3>
+                    </div>
+                    <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
+                    </p></div>
+                </p></div>
+            </p></div>
+        </p></div>
+    </p></div>
+</section>-->
+<!--<p>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <br/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+    <br/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
+    <br/>
+    <script>
+        (function ($) {
+            "use strict";
+            $('.next').click(function () {
+                $('.carousel').carousel('next');
+                return false;
+            });
+            $('.prev').click(function () {
+                $('.carousel').carousel('prev');
+                return false;
+            });
+        })
+        (jQuery);
+    </script>
+</p>-->
+
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Footer</p>
+</div>-->
 </body>
 </html>
